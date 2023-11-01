@@ -1,0 +1,28 @@
+[2022-12-18 13:40:18] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:200)
+[stacktrace]
+#0 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(125): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(112): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(590): Illuminate\\Log\\LogManager->driver()
+#3 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(252): Illuminate\\Log\\LogManager->error('Directory name ...', Array)
+#4 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(415): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(RuntimeException))
+#5 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(113): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(RuntimeException))
+#6 C:\\xampp3\\htdocs\\laravel\\mylog\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#7 C:\\xampp3\\htdocs\\laravel\\mylog\\server.php(21): require_once('C:\\\\xampp3\\\\htdoc...')
+#8 {main}
+"} 
+[2022-12-18 13:40:18] laravel.ERROR: Directory name must not be empty. {"exception":"[object] (RuntimeException(code: 0): Directory name must not be empty. at C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php:48)
+[stacktrace]
+#0 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php(48): RecursiveDirectoryIterator->__construct('', 4096)
+#1 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\symfony\\finder\\Finder.php(740): Symfony\\Component\\Finder\\Iterator\\RecursiveDirectoryIterator->__construct('', 4096, false)
+#2 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\symfony\\finder\\Finder.php(618): Symfony\\Component\\Finder\\Finder->searchInDirectory('')
+#3 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(88): Symfony\\Component\\Finder\\Finder->getIterator()
+#4 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(65): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getConfigurationFiles(Object(Illuminate\\Foundation\\Application))
+#5 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#6 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#9 C:\\xampp3\\htdocs\\laravel\\mylog\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\xampp3\\htdocs\\laravel\\mylog\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp3\\htdocs\\laravel\\mylog\\server.php(21): require_once('C:\\\\xampp3\\\\htdoc...')
+#12 {main}
+"} 

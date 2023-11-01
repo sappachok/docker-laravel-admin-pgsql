@@ -1,0 +1,5 @@
+$data = \App\Models\CustomUser::all();
+$data = \App\Models\User::all();
+$data = \App\Models\User::all();
+$data = \App\Models\CustomUser::all();
+$data = \App\Models\CustomUser::all();
