@@ -1,0 +1,22 @@
+server {
+    listen 80 default_server;
+
+    # Webroot Directory for Laravel project
+    root /var/www/public;
+    index index.php index.html;
+
+    # Your Domain Name
+    server_name _;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_pass phpfpm:9000;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+}

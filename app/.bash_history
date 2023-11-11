@@ -271,3 +271,22 @@ php artisan db:backup
 sh runschedule.sh
 sh runschedule.sh
 exit
+ls
+php artisan serve
+composer update
+php artisan serve
+php artisan serve --port=9000
+exit
+curl localhost
+curl http://localhost:9000
+exit
+ls
+crontab -e
+crontab -l
+crontab -u www
+crontab -e www
+crontab -i www
+crontab -l
+crontab -e
+crontab -e root
+exit

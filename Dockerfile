@@ -34,8 +34,11 @@ RUN docker-php-ext-enable opcache
 # RUN pecl install memcached-3.1.5 && docker-php-ext-enable memcached
 
 # copy dev php.ini
+#COPY ./app /var/www/app
 
-COPY .pgpass /var/www/.pgpass
+RUN apt-get install -y postgresql-client postgresql-client-common
+
+COPY ./.pgpass /var/www/.pgpass
 
 RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
@@ -57,7 +60,7 @@ RUN apt-get update && apt-get -y install nano
 RUN apt-get -y install cron
 RUN crontab -l | { cat; echo "* * * * * sh /var/www/runschedule.sh >> /var/log/cron.log 2>&1"; } | crontab -
 RUN service cron start
-RUN service cron status
+#RUN service cron status
 
 WORKDIR /var/www
 
